@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: gc
+# uuid: gc
+# key: google_docstring
+# condition: t
+# --
+def ${1:name} (${2:args}) -> ${3:returns}:
+    \"\"\"${4:description}
+    Args:
+        ${2:$(python-args-to-google-docstring)}
+    Returns:
+        ${3:returns}
+    \"\"\"
+$0

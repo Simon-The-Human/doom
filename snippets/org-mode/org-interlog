@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: org-interlog
+# uuid: org-interlog
+# key: org-interlog
+# condition: t
+# --
+** <`(format-time-string "%Y-%m-%d %a %H:%M")`>
+*** Деятельность
+${1:чем занимался}
+*** Ожидание
+${2:как оно думалось}
+*** Реальность
+${3:как оно было}
+$0

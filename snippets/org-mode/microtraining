@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: microtraining
+# uuid: microtraining
+# key: microtraining
+# condition: t
+# --
+** Микротренировка
+Время выполнения <`(format-time-string "%Y-%m-%d %a %H:%M")`>
+- Подтягивания: ${2:0}
+- Скручивания: ${3:0}
+- Отжимания: ${4:0}
+- Приседания: ${5:0}
+$0

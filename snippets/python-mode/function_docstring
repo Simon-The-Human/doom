@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: function_docstring
+# key: fd
+# uuid: fd
+# group: definitions
+# --
+def ${1:function}($2) -> ${3:returns}:
+    \"\"\"$4
+    Args:
+        ${2:$(python-args-to-docstring)}
+    Returns:
+        ${3:$(yas/substr yas-text "[^:]+")}: ${5:Описание возвращаемого значения.}
+    \"\"\"
+    ${0:pass}

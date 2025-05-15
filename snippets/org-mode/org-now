@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: org-now
+# uuid: org-now
+# key: org-now
+# condition: t
+# --
+<`(format-time-string "%Y-%m-%d %a %H:%M")`>
