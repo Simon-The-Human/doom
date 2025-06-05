@@ -93,10 +93,10 @@
   ;; (setq org-todo-keywords '((type "TODO(t!)" "STRT(s!)" "WAIT(w@/!)" "DONE(d@)" "KILL(k@)")))
 )
 
-(setq org-agenda-files
-      (seq-filter (lambda(x) (string-match "/daily/"(file-name-directory x)))
-       (directory-files-recursively "~/org/roam" "\\.org$")
-       ))
+;; (setq org-agenda-files
+;;       (seq-filter (lambda(x) (string-match "/daily/"(file-name-directory x)))
+;;        (directory-files-recursively "~/org/" "\\.org$")
+;;        ))
 
 (after! json-mode
   (setq js-indent-level 4))
