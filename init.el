@@ -165,16 +165,16 @@
         +jupyter        ; ipython/jupyter support for babel
         +pandoc         ; export-with-pandoc support
         +present        ; using org-mode for presentations
-        +pretty         ; prettify org view
-        )
+        +pretty)         ; prettify org view
+
        ;;php               ; perl's insecure younger brother
        plantuml          ; diagrams for confusing people more
        ;;purescript        ; javascript, but functional
        (python
         +lsp
         +poetry
-        +pyenv
-        )              ; beautiful is better than ugly
+        +pyenv)
+                      ; beautiful is better than ugly
        ;;qt                ; the 'cutest' gui framework ever
        racket            ; a DSL for DSLs
        ;;raku              ; the artist formerly known as perl6
