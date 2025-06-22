@@ -77,21 +77,26 @@
 ;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented.
 
+(set-language-environment "UTF-8")
+(set-default-coding-systems 'utf-8)
+(set-selection-coding-system 'utf-8)
+(set-clipboard-coding-system 'utf-8)
+(set-keyboard-coding-system 'utf-8-unix)
+(set-terminal-coding-system 'utf-8-unix)
+
 (setq calendar-week-start-day 1) ;; to set the start day to Monday
 
 (use-package! emacs
   :config
   (setq max-lisp-eval-depth 5000))
 
-
 (after! org
   (require 'evil-org)
   (add-hook 'org-mode-hook 'turn-on-auto-fill)
   (setq system-time-locale "C")
-  (setq org-log-into-drawer t)
+  (setq org-log-into-drawer t))
   ;; (setq org-todo-keywords '((sequence "TODO(!)" "STRT(!)" "WAIT(@/!)" "DONE(@)" "KILL(@)")))
   ;; (setq org-todo-keywords '((type "TODO(t!)" "STRT(s!)" "WAIT(w@/!)" "DONE(d@)" "KILL(k@)")))
-)
 
 ;; (setq org-agenda-files
 ;;       (seq-filter (lambda(x) (string-match "/daily/"(file-name-directory x)))

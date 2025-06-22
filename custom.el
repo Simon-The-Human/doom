@@ -9,7 +9,9 @@
  '(package-selected-packages
    '(jupyter org-roam-ui pandoc saveplace-pdf-view org-noter-pdftools pdf-tools evil-org eglot pyenv-mode evil-mc evil-multiedit))
  '(safe-local-variable-values
-   '((python-shell-interpreter . ".requests_pokemon_venv/bin/python3")
+   '((python-shell-interpreter . "~/projects/smith_autocalc/.venv/bin/python")
+     (python-shell-interpreter . "~/projects/adsw/projects/sandbox_adcm_aio_client/.venv/bin/python")
+     (python-shell-interpreter . ".requests_pokemon_venv/bin/python3")
      (python-shell-interpreter . "./.requests_pokemon_venv/bin/python3")
      (python-shell-interpreter . "/ssh:10.92.14.27:~/.venv_paas/bin/python")
      (ssh-deploy-async-with-threads . 1)
