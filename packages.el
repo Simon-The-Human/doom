@@ -67,4 +67,3 @@
   (:host github
    :repo "dalanicolai/image-roll.el"))
 
-(require 'fb2-reader)
