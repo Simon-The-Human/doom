@@ -95,8 +95,8 @@
   (add-hook 'org-mode-hook 'turn-on-auto-fill)
   (setq system-time-locale "C")
   (setq org-log-into-drawer t))
-  ;; (setq org-todo-keywords '((sequence "TODO(!)" "STRT(!)" "WAIT(@/!)" "DONE(@)" "KILL(@)")))
-  ;; (setq org-todo-keywords '((type "TODO(t!)" "STRT(s!)" "WAIT(w@/!)" "DONE(d@)" "KILL(k@)")))
+;; (setq org-todo-keywords '((sequence "TODO(!)" "STRT(!)" "WAIT(@/!)" "DONE(@)" "KILL(@)")))
+;; (setq org-todo-keywords '((type "TODO(t!)" "STRT(s!)" "WAIT(w@/!)" "DONE(d@)" "KILL(k@)")))
 
 ;; (setq org-agenda-files
 ;;       (seq-filter (lambda(x) (string-match "/daily/"(file-name-directory x)))
@@ -125,19 +125,28 @@
   (setq vterm-shell (get-shell-type)))
 
 (use-package! websocket
-    :after org-roam)
+  :after org-roam)
 
 (after! dap-mode
   (setq dap-python-debugger 'debugpy))
 
 (use-package! org-roam-ui
-    :after org-roam ;; or :after org
-;;         normally we'd recommend hooking orui after org-roam, but since org-roam does not have
-;;         a hookable mode anymore, you're advised to pick something yourself
-;;         if you don't care about startup time, use
-;;  :hook (after-init . org-roam-ui-mode)
-    :config
-    (setq org-roam-ui-sync-theme t
-          org-roam-ui-follow t
-          org-roam-ui-update-on-save t
-          org-roam-ui-open-on-start t))
+  :after org-roam ;; or :after org
+  ;;         normally we'd recommend hooking orui after org-roam, but since org-roam does not have
+  ;;         a hookable mode anymore, you're advised to pick something yourself
+  ;;         if you don't care about startup time, use
+  ;;  :hook (after-init . org-roam-ui-mode)
+  :config
+  (setq org-roam-ui-sync-theme t
+        org-roam-ui-follow t
+        org-roam-ui-update-on-save t
+        org-roam-ui-open-on-start t))
+
+(use-package fb2-reader
+  :mode ("\\.fb2\\(\\.zip\\)?\\'" . fb2-reader-mode)
+  :commands (fb2-reader-continue)
+  :custom
+  ;; This mode renders book with fixed width, adjust to your preferences.
+  (fb2-reader-page-width 120)
+  (fb2-reader-image-max-width 400)
+  (fb2-reader-image-max-height 400))
