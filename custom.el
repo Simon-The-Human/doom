@@ -9,7 +9,11 @@
  '(package-selected-packages
    '(jupyter org-roam-ui pandoc saveplace-pdf-view org-noter-pdftools pdf-tools evil-org eglot pyenv-mode evil-mc evil-multiedit))
  '(safe-local-variable-values
-   '((python-shell-interpreter . "~/projects/smith_autocalc/.venv/bin/python")
+   '((python-shell-interpreter . "/home/simon/projects/adsw/projects/paas_cloudru_evolution/.venv/bin/python")
+     (python-shell-virtualenv-root . "/home/simon/projects/adsw/projects/paas_cloudru_evolution/.venv")
+     (python-shell-virtualenv-root . "/home/simon/projects/adsw/projects/paas_cloudru_evolution/.venv/")
+     (python-shell-virtualenv-root . "~/projects/adsw/projects/paas_cloudru_evolution/.venv/")
+     (python-shell-interpreter . "~/projects/smith_autocalc/.venv/bin/python")
      (python-shell-interpreter . "~/projects/adsw/projects/sandbox_adcm_aio_client/.venv/bin/python")
      (python-shell-interpreter . ".requests_pokemon_venv/bin/python3")
      (python-shell-interpreter . "./.requests_pokemon_venv/bin/python3")
@@ -45,10 +49,10 @@
      (python-shell-interpreter . "/opt/rbta/venvs/aldpro-common/bin/python")))
  '(smtpmail-smtp-server "new-mail.astralinux.ru")
  '(smtpmail-smtp-service 25))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
+(custom-set-faces)
+;; custom-set-faces was added by Custom.
+;; If you edit it by hand, you could mess it up, so be careful.
+;; Your init file should contain only one such instance.
+;; If there is more than one, they won't work right.
+
 (put 'scroll-left 'disabled nil)
