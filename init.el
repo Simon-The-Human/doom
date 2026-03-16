@@ -167,6 +167,7 @@
         +jupyter        ; ipython/jupyter support for babel
         +pandoc         ; export-with-pandoc support
         +present        ; using org-mode for presentations
+        +pomodoro
         +pretty)         ; prettify org view
 
        ;;php               ; perl's insecure younger brother

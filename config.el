@@ -102,6 +102,10 @@
       (list (concat org-directory "/roam/daily")
             (concat org-directory "/agenda")))
 
+(after! org-pomodoro
+  (setq org-pomodoro-length 90)
+  (setq org-pomodoro-short-break-length 15)
+  (setq org-pomodoro-long-break-length 40))
 
 (after! json-mode
   (setq js-indent-level 4))
