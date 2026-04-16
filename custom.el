@@ -56,3 +56,5 @@
 ;; If there is more than one, they won't work right.
 
 (put 'scroll-left 'disabled nil)
+(put 'downcase-region 'disabled nil)
+(put 'list-timers 'disabled nil)
