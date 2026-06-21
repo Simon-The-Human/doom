@@ -97,7 +97,8 @@
   (setq org-log-into-drawer t)
   (setq org-agenda-start-with-log-mode t)
   (setq org-agenda-log-mode-items '(state clock closed note))
-  (setq org-agenda-show-log t))
+  (setq org-agenda-show-log t)
+  (add-hook 'org-mode-hook (lambda () (setq-local apheleia-mode t))))
 ;; (setq org-todo-keywords '((sequence "TODO(!)" "STRT(!)" "WAIT(@/!)" "DONE(@)" "KILL(@)")))
 ;; (setq org-todo-keywords '((type "TODO(t!)" "STRT(s!)" "WAIT(w@/!)" "DONE(d@)" "KILL(k@)")))
 
